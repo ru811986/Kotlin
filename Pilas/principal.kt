@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
         println("| 5. Mostrar pila                  |")
         println("| 6. Salir                         |")
         println("+----------------------------------+")
-        println("Opción: ")
+        print("Opción: ")
         opcionMenu = readLine()!!.toInt()
         when(opcionMenu) {
             1 -> {
