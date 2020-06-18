@@ -36,6 +36,9 @@ class Pila(var cima: Nodo?) {
                 posicion++
                 actual = actual.siguiente
             }
+            if(!encontrado) {
+                println("Elemento $datoABuscar no encontrado")
+            }
         }
     }
     fun modificar(datoAModificar: Int, datoModificado: Int) {
@@ -51,6 +54,9 @@ class Pila(var cima: Nodo?) {
                 }
                 posicion++
                 actual = actual.siguiente
+            }
+            if(!modificado) {
+                println("Elemento $datoAModificar no modificado, dado que no se ha encontrado")
             }
         }
     }
